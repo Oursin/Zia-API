@@ -21,5 +21,3 @@ class IRequest {
     virtual bool acceptLanguage(std::string language) = 0;
     virtual bool isType(std::string mimeType) = 0;
 };
-
-// TODO module expose type MIME qu'ils expectent
