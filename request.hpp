@@ -14,7 +14,6 @@ class IRequest {
     virtual std::string method() = 0; // GET
     virtual std::string protocol() = 0; // HTTP/1.1
     virtual std::string url() = 0; // http://site.tld/page/info?query
-    virtual std::map<std::string, std::string> query() = 0;
 
     virtual bool accept(std::string mimetype) = 0;
     virtual bool acceptCharset(std::string charset) = 0;
