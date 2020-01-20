@@ -1,3 +1,12 @@
+---
+name: "Bug Report"
+about: "It doesn't work!"
+title: ''
+labels:
+  - bug
+assignees: 'codelax'
+---
+
 # Bug Report
 
 ## What is the expected behavior ?
