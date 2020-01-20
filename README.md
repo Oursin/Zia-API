@@ -1,6 +1,5 @@
 # Zia-API
 
-![Documentation status](https://github.com/Oursin/Zia-API/workflows/documentation/badge.svg)
 [![star this repo](http://githubbadges.com/star.svg?user=Oursin&repo=Zia-API&style=default)](https://github.com/Oursin/Zia-API/stargazers)
 [![fork this repo](http://githubbadges.com/fork.svg?user=Oursin&repo=Zia-API&style=default)](https://github.com/Oursin/Zia-API/fork)
 [![GitHub Issues](https://img.shields.io/github/issues/Oursin/Zia-API.svg)](https://github.com/Oursin/Zia-API/issues)
@@ -10,15 +9,13 @@
 
 > Zia project's API for Epitech Students
 
-### Notes
+### Introduction
 
 Zia is an Epitech project, from the third year. The goal is to achieve a modulable HTTP server, fully configurable and using a common API shared among all students
 
 ___
 
-Feel free to contribute, or to send tips !
-
-And don't hesitate to give a star if you like it, of course!
+Feel free to contribute !
 
 ____
 
@@ -50,8 +47,6 @@ The IRequest can be modified by a module, so the next module will access the mod
 
 The IResponse represent an HTTP response. Every modules can apply modifications on it, and once every modules are executed, the response will be serialized and sent according through the HTTP protocol
 
-## Installation
-
 ## Documentation
 
 Documentation, automatically updated to match the latest api version, is available [HERE](https://oursin.github.io/Zia-API/)
@@ -79,6 +74,8 @@ Documentation, automatically updated to match the latest api version, is availab
 5. Create a new Pull Request
 
 ## Contributors
+
+[](https://github.com/Oursin.png)
 
 - [Oursin](https://github.com/Oursin) - Owner
 - [LeChatErrant](https://github.com/LeChatErrant) - Creator and maintainer
