@@ -4,6 +4,7 @@
 #include <string>
 #include <map>
 
+namespace Zia::API::HTTP {
 class IRequest {
     virtual std::string toString() = 0;
     virtual std::any body() = 0; // Body should be a string at first ? Can be changed by modules, like images or json object
@@ -21,3 +22,4 @@ class IRequest {
     virtual bool acceptLanguage(std::string language) = 0;
     virtual bool isType(std::string mimeType) = 0;
 };
+}
