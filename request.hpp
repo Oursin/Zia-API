@@ -6,9 +6,16 @@
 
 namespace Zia::API::HTTP {
 class IRequest {
-    virtual std::string toString() = 0;
+    /**
+     *
+     * @return
+     */
     virtual std::any body() = 0; // Body should be a string at first ? Can be changed by modules, like images or json object
-
+    /**
+     *
+     * @param field
+     * @return
+     */
     virtual std::string getHeader(std::string field) = 0;
     virtual std::string hostname() = 0;
     virtual std::string ip() = 0; // 1.1.1.1
