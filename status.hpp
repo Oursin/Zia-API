@@ -10,6 +10,11 @@ struct Status {
     const char *description;
 };
 
+/**
+ * @defgroup
+ * List of status code
+ * @{
+ */
 inline constexpr Status Continue {100, "Continue"};
 inline constexpr Status SwitchingProtocols {101, "Switching Protocols"};
 inline constexpr Status Processing {102, "Processing"};
@@ -73,4 +78,7 @@ inline constexpr Status InsufficientStorage {507, "Insufficient Storage"};
 inline constexpr Status LoopDetected {508, "Loop Detected"};
 inline constexpr Status NotExtended {510, "Not Extended"};
 inline constexpr Status NetworkAuthenticationRequired {511, "Network Authentication Required"};
+/**
+ * @}
+ */
 }
