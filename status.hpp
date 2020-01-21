@@ -71,7 +71,3 @@ static const Status LoopDetected = {.code=508, .description="Loop Detected"};
 static const Status NotExtended = {.code=510, .description="Not Extended"};
 static const Status NetworkAuthenticationRequired = {.code=511, .description="Network Authentication Required"};
 }
-
-int function() {
-    return Zia::API::HTTP::Status::InternalServerError.code;
-}
