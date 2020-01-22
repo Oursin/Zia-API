@@ -3,7 +3,7 @@
 #include <string>
 #include <utility>
 
-namespace Zia::API::HTTP::Status {
+namespace zia::http {
 struct Status {
     constexpr explicit Status(int _code, const char *_description) : code(_code), description(_description) {}
     int code;
