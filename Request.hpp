@@ -20,7 +20,7 @@ public:
      * Sets the raw bytes of the request.
      * This method should only be used by the Core and any module that deciphers the contents of the request.
      */
-    virtual void setRqw(std::string raw) = 0;
+    virtual void setRaw(std::string raw) = 0;
 
     /**
      * Parses the request from it's raw bytes.
