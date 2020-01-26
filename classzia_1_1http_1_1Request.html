@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: zia::http::Request Class Reference</title>
+<title>Zia API: zia::http::Request Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Zia API
    </div>
   </td>
  </tr>
@@ -69,13 +69,15 @@ $(function() {
 <div class="title">zia::http::Request Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Request_8hpp_source.html">Request.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a675a65b00795f4308639500901a0ba"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1Request.html#a8a675a65b00795f4308639500901a0ba">getRaw</a> ()=0</td></tr>
 <tr class="separator:a8a675a65b00795f4308639500901a0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af02f454eb13ec378b72541c0fd2f6578"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1Request.html#af02f454eb13ec378b72541c0fd2f6578">setRqw</a> (std::string raw)=0</td></tr>
-<tr class="separator:af02f454eb13ec378b72541c0fd2f6578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ce5aff1cbe8c762b14547bc2df39f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1Request.html#a63ce5aff1cbe8c762b14547bc2df39f0">setRaw</a> (std::string raw)=0</td></tr>
+<tr class="separator:a63ce5aff1cbe8c762b14547bc2df39f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacfbd2a584981a5c7229660ead74ed9f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1Request.html#aacfbd2a584981a5c7229660ead74ed9f">parse</a> ()=0</td></tr>
 <tr class="separator:aacfbd2a584981a5c7229660ead74ed9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76287abb41635f9fe5a47a7e3f75cf19"><td class="memItemLeft" align="right" valign="top">virtual std::any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1Request.html#a76287abb41635f9fe5a47a7e3f75cf19">body</a> ()=0</td></tr>
@@ -89,7 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a447eefd09d9f0b39a46cb5e57403888c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1Request.html#a447eefd09d9f0b39a46cb5e57403888c">url</a> ()=0</td></tr>
 <tr class="separator:a447eefd09d9f0b39a46cb5e57403888c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classzia_1_1http_1_1Request.html">Request</a> interface represents the incoming HTTP request </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a76287abb41635f9fe5a47a7e3f75cf19"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76287abb41635f9fe5a47a7e3f75cf19">&#9670;&nbsp;</a></span>body()</h2>
 
@@ -253,8 +257,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af02f454eb13ec378b72541c0fd2f6578"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af02f454eb13ec378b72541c0fd2f6578">&#9670;&nbsp;</a></span>setRqw()</h2>
+<a id="a63ce5aff1cbe8c762b14547bc2df39f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ce5aff1cbe8c762b14547bc2df39f0">&#9670;&nbsp;</a></span>setRaw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +267,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void zia::http::Request::setRqw </td>
+          <td class="memname">virtual void zia::http::Request::setRaw </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>raw</em></td><td>)</td>
