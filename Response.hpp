@@ -38,7 +38,7 @@ public:
      * @param field The field to get
      * @return The value associated with the header field. Returns an empty string if not set.
      */
-    virtual std::string getHeader(std::string field) const = 0;
+    virtual std::optional<std::string> getHeader(std::string field) const = 0;
 
     /**
      * Sets the value of a header field, as defined in RFC 2616, 4.2
