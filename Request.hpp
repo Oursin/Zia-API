@@ -7,6 +7,9 @@
 
 namespace zia::http {
 
+/**
+ * The Request interface represents the incoming HTTP request
+ */
 class Request {
 public:
 
@@ -26,7 +29,7 @@ public:
      * Parses the request from it's raw bytes.
      * This method should at least fill the headers and the url parameters.
      */
-     virtual void parse() = 0;
+    virtual void parse() = 0;
 
     /**
      * Returns the body of the request, as parsed by any body parsing module used.
