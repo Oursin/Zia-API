@@ -23,29 +23,29 @@ ____
 ## API
 
 The API is divided into 3 major interfaces :
- - IModule
- - IRequest
- - IResponse
+ - Module
+ - Request
+ - Response
 
-### IModule
+### Module
 
-The IModule interface must be implemented by every modules. You can see them as middlewares, applied one after an other by your server for each incoming requests.
+The Module interface must be implemented by every modules. You can see them as middlewares, applied one after an other by your server for each incoming requests.
 
-Every IModule implements a single method, exec, taking as parameters the request and the response
+Every Module implements a single method, exec, taking as parameters the request and the response
 
 ```cpp
-virtual void exec(IRequest &request, IResponse &response) = 0;
+virtual void exec(Request &request, Response &response) = 0;
 ```
 
-### IRequest
+### Request
 
-The IRequest represents the incoming HTTP request. It gives you access to a large variety of parameters from the request, such as the host, the body, headers, and so on
+The Request represents the incoming HTTP request. It gives you access to a large variety of parameters from the request, such as the host, the body, headers, and so on
 
-The IRequest can be modified by a module, so the next module will access the modified request. For example, you can implement a JSON parser module, parsing the textual body into JSON and forwarding the result to every modules coming after
+The Request can be modified by a module, so the next module will access the modified request. For example, you can implement a JSON parser module, parsing the textual body into JSON and forwarding the result to every modules coming after
 
-### IResponse
+### Response
 
-The IResponse represent an HTTP response. Every modules can apply modifications on it, and once every modules are executed, the response will be serialized and sent according through the HTTP protocol
+The Response represent an HTTP response. Every modules can apply modifications on it, and once every modules are executed, the response will be serialized and sent according through the HTTP protocol
 
 ## Documentation
 
@@ -57,9 +57,9 @@ Documentation, automatically updated to match the latest api version, is availab
 - [x] Request interface
 - [x] Response interface
 - [x] HTTP status
-- [ ] HTTP methods
+- [x] HTTP methods
 
-- [ ] Code documentation
+- [x] Code documentation
 - [x] Documentation automatically generated and deployed
 - [x] Issue template
 - [x] Feature request template
@@ -67,15 +67,13 @@ Documentation, automatically updated to match the latest api version, is availab
 
 ## Contributing
 
-1. Fork it (<https://github.com/Oursin/Zia-API/fork>)
+1. [Fork it](https://github.com/Oursin/Zia-API/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+5. Create a [new Pull Request](https://github.com/Oursin/Zia-API/compare)
 
 ## Contributors
-
-[](https://github.com/Oursin.png)
 
 - [Oursin](https://github.com/Oursin) - Owner
 - [LeChatErrant](https://github.com/LeChatErrant) - Creator and maintainer
@@ -83,3 +81,4 @@ Documentation, automatically updated to match the latest api version, is availab
 - [Codelax](https://github.com/codelax) - Expert nitpicker
 - [Yooooomi](https://github.com/Yooooomi) - Blockchain engineer
 - [Rivalo](https://github.com/noerls) - Who's that guy?
+
